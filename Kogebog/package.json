@@ -1,0 +1,15 @@
+{
+  "name": "kogebog",
+  "version": "1.0.0",
+  "description": "Kogebog",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kogebog"
+  ],
+  "author": "Theis Jensen",
+  "license": "MIT"
+}
