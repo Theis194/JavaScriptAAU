@@ -29,7 +29,7 @@ h2 {
     color: #333;
 }
 
-ul {
+.horizontallist {
     list-style-type: none;
     justify-content: space-between;
     margin: 0;
@@ -109,4 +109,31 @@ li {
     padding: 20px 20px;
     word-wrap: break-word;
     background-color: var(--pastelblue);
+}
+
+.ingredienslist {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    list-style-type: none;
+}
+
+.listitem {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    list-style-type: none;
+    clear: left;
+}
+
+#checkboxes label {
+    float: left;
+}
+
+#checkboxes ul {
+    margin: 0;
+    list-style: none;
+    float: left;
 }
