@@ -29,6 +29,11 @@ h2 {
     color: #333;
 }
 
+li {
+    float: left;
+    margin-right: 3px;
+}
+
 .horizontallist {
     list-style-type: none;
     justify-content: space-between;
@@ -36,11 +41,6 @@ h2 {
     padding: 0;
     overflow: hidden;
     display: flex;
-}
-
-li {
-    float: left;
-    margin-right: 3px;
 }
 
 .topnav {
@@ -90,6 +90,14 @@ li {
     background-color: var(--darkblue);
     border: var(--darkblue);
     height: 3px;
+    width: auto;
+}
+
+.sideline {
+    background-color: var(--darkblue);
+    border: var(--darkblue);
+    height: 3px;
+    width: auto;
 }
 
 .box {
@@ -137,3 +145,31 @@ li {
     list-style: none;
     float: left;
 }
+
+#container {
+    height:100%;
+    width:100%;
+    font-size:0;
+ }
+
+#left, #middle, #right {
+    display:inline-block;
+    *display:inline;
+    zoom:2;
+    vertical-align:top;
+    font-size:13px;
+ }
+ 
+ #left {
+    width:26%;
+    float: left;
+ }
+ 
+ #middle {
+    width:51%;
+ }
+ 
+ #right {
+    width:26%;
+    float: right;
+ }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Body Mass Index</title>
+    </head>
+    <body>
+        <h1>IWP BMI-recorder</h1>
+        <form action="https://httpbin.org/post" method="post">
+            <label>Name</label>
+            <input type="text" id="fname" value="Name">
+            <label>Height (cm)</label>
+            <input type="text" id="fheight">
+            <label>Weight (kg)</label>
+            <input type="text" id="fweight">
+            <label>Age (years)</label>
+            <input type="text" id="fage">
+            <label>Female</label>
+            <input type="radio" id="female">
+            <label>Male</label>
+            <input type="radio" id="male">
+            <label>Indifferent</label>
+            <input type="radio" id="indifferent">
+            <input type="submit" id="record" value="Record">
+        </form>
+    </body>
+</html>
