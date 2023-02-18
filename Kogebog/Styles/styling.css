@@ -43,6 +43,15 @@ li {
     display: flex;
 }
 
+.verticallist {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+}
+
 .topnav {
     overflow: hidden;
     background-color: var(--turquise);
@@ -136,6 +145,11 @@ li {
     clear: left;
 }
 
+.recipelistitem {
+    padding-left: 0;
+    width: 100%;
+}
+
 #checkboxes label {
     float: left;
 }
@@ -150,6 +164,7 @@ li {
     height:100%;
     width:100%;
     font-size:0;
+    display: flex;
  }
 
 #left, #middle, #right {
@@ -161,15 +176,17 @@ li {
  }
  
  #left {
-    width:26%;
+    width:40%;
     float: left;
  }
  
  #middle {
-    width:51%;
+    width:20%;
+    margin: auto;
+    text-align: center;
  }
  
  #right {
-    width:26%;
+    width:40%;
     float: right;
  }
