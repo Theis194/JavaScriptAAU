@@ -22,3 +22,17 @@ ingredients.push(ingredient7);
 let recipe = new Recipe("Hjemmebate boller med ris", "This bitch lit", "../Images/boller.jpg", "10 timer", "20 min", "3 dage", 14, true, ingredients, "Do shit like this");
 
 console.log(recipe);
+
+
+
+function createRecipeListItems() {
+    let recipeList = document.querySelector("#recipe-list");
+    let recipeListItem = recipeList.querySelector(".recipelistitem")
+    let newRLI = recipeListItem.cloneNode(true);
+    console.log(newRLI );
+    newRLI.querySelector("#recipe1desc").textContent = recipe.description;
+
+    recipeList.appendChild(newRLI);
+}
+
+window.load = createRecipeListItems();
