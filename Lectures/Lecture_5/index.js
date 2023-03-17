@@ -23,7 +23,7 @@ fillSelection(selectLager, beerTypes.lagers);
 fillSelection(selectWild, beerTypes.wilds);
 
 button.addEventListener("click", checkedRadio);
-//body.addEventListener("mouseover", listener);
+body.addEventListener("mouseover", listener);
 
 for (const item of rButtons) {
     item.addEventListener("click", checkedRadio);
