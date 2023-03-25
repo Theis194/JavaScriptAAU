@@ -1,0 +1,17 @@
+.box {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.insideBox {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 5px;
+}
