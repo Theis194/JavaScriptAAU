@@ -1,8 +1,13 @@
 {
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
+    "@types/filesystem": "0.0.32",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-types": "^0.6.1",
     "mongodb": "^5.1.0",
     "node-fetch": "^3.3.1",
+    "path": "^0.12.7",
     "ws": "^8.13.0"
   }
 }
