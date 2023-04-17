@@ -28,7 +28,8 @@ async function main(){
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
      */
-    const uri = "mongodb://theis:kryp29t1@192.168.0.127:27017/theis?retryWrites=true&w=majority";
+    const uri = "mongodb://p2Access:cs23sw202@bmpnj.duckdns.org:27017/p2?retryWrites=true&w=majority";
+    //const uri = "mongodb://p2Access:cs23sw202@192.168.0.127:27017/p2?retryWrites=true&w=majority";
  
 
     const client = new MongoClient(uri);
@@ -78,7 +79,8 @@ async function listDatabases(client){
 
 // This function takes a MongoClient and a newEntry and inserts the entry in to a pre specified collection
 async function createEntry(client, newEntry) {
-    const result = await client.db("theis").collection("userdb").insertOne(newEntry);
+    // Change .db("theis") to .db(database) and maybe .collection
+    const result = await client.db("p2").collection("userdb").insertOne(newEntry);
     console.log(`New entry created with the following id: ${result.insertedId}`);
 }
 
