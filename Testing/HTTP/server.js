@@ -26,6 +26,7 @@ const server = http.createServer((req, res) => {
                         res.end(`Server error: ${err.code}`);
                     }
                 } else {
+                    console.log(contentType);
                     res.writeHead(200, {'contentType': contentType});
                     res.end(content, 'utf-8');
                 }

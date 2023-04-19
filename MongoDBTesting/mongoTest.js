@@ -104,3 +104,5 @@ async function getEntry(client, nameOfEntry) {
         console.log(`No entrys found with the name '${nameOfEntry}'`);
     }
 }
+
+console.log(firstNames);
