@@ -53,7 +53,7 @@ async function spam(link) {
     await page.goto(link);
 
     for (let i = 0; i < 5; i++) {
-        await page.waitForNetworkIdle()
+        await page.waitForSelector("div.Qr7Oae")
         const elems = await page.$$("div.Qr7Oae");
 
         // 
