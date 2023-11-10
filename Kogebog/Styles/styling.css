@@ -36,9 +36,10 @@ li {
 
 .horizontallist {
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0;
-    padding: 0;
+    padding-left: 100px;
+    padding-right: 100px;
     overflow: hidden;
     display: flex;
 }
@@ -80,12 +81,18 @@ li {
     margin: auto;
 }
 
-.row {
+.container {
     display: flex;
 }
+  
+.container img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
-.column {
-    flex-basis: 50%;
+.container p {
+    margin-left: 20px; /* Adjust the spacing between elements */
+    padding-top: 20px;
 }
 
 .line {
